@@ -41,7 +41,7 @@ Example (multi-instrument): `THEANO_FLAGS=device=cuda python main.py --mode trai
 Example (singing-voice): `THEANO_FLAGS=device=cuda python main.py --mode training --target singing-voice --config config_singing_voice.json`
 
 #### Configuration
-A detailed description of all configurable parameters can be found in [config.md](https://github.com/francesclluis/source-separation-wavenet_prova/blob/master/config.md)
+A detailed description of all configurable parameters can be found in [config.md](https://github.com/francesclluis/source-separation-wavenet/blob/master/config.md)
 
 #### Optional command-line arguments:
 Argument | Valid Inputs | Default | Description
