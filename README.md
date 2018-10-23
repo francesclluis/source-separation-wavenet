@@ -1,7 +1,7 @@
 A Wavenet For Source Separation
 ====
 
-Implementation of the Wavenet For Audio Source Separation.
+A neural network for end-to-end music source separation.
 
 Listen to separated samples [here](http://jordipons.me/apps/end-to-end-music-source-separation/)
 
