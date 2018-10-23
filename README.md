@@ -25,7 +25,7 @@ A pre-trained singing-voice model (best-performing model described in the paper)
 
 #### Source Separation:
 
-Example (multi-instrument): `THEANO_FLAGS=device=cuda python main.py --mode inference --config sessions/multi-instrument/config.json --mixture_input_path audios/`
+Example (multi-instrument): `THEANO_FLAGS=device=cuda python main.py --mode inference --config sessions/multi-instrument/config.json --mixture_input_path audio/`
 
 Example (singing-voice): `THEANO_FLAGS=device=cuda python main.py --mode inference --config sessions/singing-voice/config.json --mixture_input_path audio/`
 
@@ -47,7 +47,7 @@ A detailed description of all configurable parameters can be found in [config.md
 Argument | Valid Inputs | Default | Description
 -------- | ---- | ---------- | -----
 mode | [training, inference] | training |
-target | [multi-instrument, singing-voice] | multi-instrument |
+target | [multi-instrument, singing-voice] | multi-instrument | Target of the model to train
 config | string | config.json | Path to JSON-formatted config file
 print_model_summary | bool | False | Prints verbose summary of the model
 load_checkpoint | string | None | Path to hdf5 file containing a snapshot of model weights
