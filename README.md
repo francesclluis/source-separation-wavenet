@@ -5,6 +5,20 @@ A neural network for end-to-end music source separation.
 
 Listen to separated samples [here](http://jordipons.me/apps/end-to-end-music-source-separation/)
 
+What is a Wavenet For Source Separation?
+-----
+The Wavenet For Source Separation is a convolutional neural network applicable to music source separation tasks, which works directly on the raw audio waveform.
+
+It is an adaptation of [Wavenet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/) that turns the original causal model (that is generative and slow), into a non-causal model (that is discriminiative and parallelizable). This idea was originally proposed by Rethage et al. in this [paper](https://arxiv.org/abs/1706.07162), for speech denoising, and now it is adapted for monaural music source separation.
+
+The main difference between the original Wavenet and the non-causal adaptation used, is that some samples from the future can be used to predict the present one. As a result of removing the autoregressive causal nature of the original Wavenet, this fully convolutional model is now able to predict a target field instead of one sample at a time – due to this parallelization, it is possible to run the model in real-time on a GPU.
+
+<img src="img/wavenet_target_field.jpg">
+
+See the diagram below for a summary of the network architecture.
+
+<img src="img/wavenet_diagram.jpg">
+
 Installation
 -----
 1. `git clone https://github.com/francesclluis/source-separation-wavenet.git`
