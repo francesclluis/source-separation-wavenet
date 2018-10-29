@@ -36,7 +36,7 @@ A pre-trained multi-instrument model (best-performing model described in the pap
 
 A pre-trained singing-voice model (best-performing model described in the paper) can be found in `sessions/singing-voice/checkpoints` and is ready to be used out-of-the-box. The parameterization of this model is specified in `sessions/singing-voice/config.json`
 
-*Download the dataset as described [below](https://github.com/francesclluis/source-separation-wavenet_prova#dataset)*
+*Download the dataset as described [below](https://github.com/francesclluis/source-separation-wavenet#dataset)*
 
 #### Source Separation:
 
