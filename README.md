@@ -1,8 +1,8 @@
 A Wavenet for Music Source Separation
 ====
 
-A neural network for end-to-end music source separation, as described in [END-TO-END MUSIC SOURCE SEPARATION:
-IS IT POSSIBLE IN THE WAVEFORM DOMAIN?](https://arxiv.org/pdf/1810.12187.pdf)
+A neural network for end-to-end music source separation, as described in [End-to-end music source separation:
+is it possible in the waveform domain?](https://arxiv.org/pdf/1810.12187.pdf)
 
 Listen to separated samples [here](http://jordipons.me/apps/end-to-end-music-source-separation/)
 
