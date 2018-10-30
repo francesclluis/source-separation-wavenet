@@ -1,11 +1,12 @@
-A Wavenet For Music Source Separation
+A Wavenet for Music Source Separation
 ====
 
-A neural network for end-to-end music source separation.
+A neural network for end-to-end music source separation, as described in [END-TO-END MUSIC SOURCE SEPARATION:
+IS IT POSSIBLE IN THE WAVEFORM DOMAIN?](https://arxiv.org/pdf/1810.12187.pdf)
 
 Listen to separated samples [here](http://jordipons.me/apps/end-to-end-music-source-separation/)
 
-What is a Wavenet For Music Source Separation?
+What is a Wavenet for Music Source Separation?
 -----
 
 The Wavenet for Music Source Separation is a fully convolutional neural network that directly operates on the raw audio waveform.
