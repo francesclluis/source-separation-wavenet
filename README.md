@@ -11,7 +11,7 @@ What is a Wavenet for Music Source Separation?
 
 The Wavenet for Music Source Separation is a fully convolutional neural network that directly operates on the raw audio waveform.
 
-It is an adaptation of [Wavenet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/) that turns the original causal model (that is generative and slow), into a non-causal model (that is discriminative and parallelizable). This idea was originally proposed by [Rethage et al.](https://arxiv.org/abs/1706.07162) for speech denoising and now it is adapted for monaural music source separation.
+It is an adaptation of [Wavenet](https://deepmind.com/blog/wavenet-generative-model-raw-audio/) that turns the original causal model (that is generative and slow), into a non-causal model (that is discriminative and parallelizable). This idea was originally proposed by [Rethage et al.](https://arxiv.org/abs/1706.07162) for speech denoising and now it is adapted for monaural music source separation. Their [code](https://github.com/drethage/speech-denoising-wavenet) is reused.
 
 The main difference between the original Wavenet and the non-causal adaptation used, is that some samples from the future can be used to predict the present one. As a result of removing the autoregressive causal nature of the original Wavenet, this fully convolutional model is now able to predict a target field instead of one sample at a time – due to this parallelization, it is possible to run the model in real-time on a GPU.
 
